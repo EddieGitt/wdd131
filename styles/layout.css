@@ -1,0 +1,101 @@
+/* Reset some default spacing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Layout Using CSS Grid */
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    grid-area: header;
+    background-color: #000000;
+    color: white;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Header Title */
+
+header h1 {
+    background: rgb(41, 41, 41);
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+/* Navigation Using Flexbox */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content */
+
+main {
+    grid-area: main;
+    padding: 20px;
+    background-color: rgba(97, 97, 97, 0.527);
+}
+
+
+main img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+
+/* Aside */
+
+aside {
+    grid-area: aside;
+    background-color: #ffffff25;
+    padding: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+    background-color: #1a1b1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
