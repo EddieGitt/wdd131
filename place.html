@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Akwa Ibom State, Nigeria - Ediomo V. Ebong</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Ediomo V. Ebong. Discover Akwa Ibom State, Nigeria – its weather, culture, and beauty.">
+  <meta name="author" content="Ediomo V. Ebong">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <span class="site-title">Akwa Ibom State</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="temples.html">Temples</a>
+      <a href="place.html" class="active">Place</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO IMAGE — srcset responsive -->
+    <div class="hero">
+      <picture>
+        <source
+          media="(min-width: 640px)"
+          srcset="images/akwaibomcoastline.jpg">
+        <img
+          src="images/akwaibomcoastline.jpg"
+          alt="Aerial view of Akwa Ibom State coastline showing lush green vegetation meeting the Atlantic Ocean in southern Nigeria">
+      </picture>
+      <div class="hero-text">
+        <h1>Akwa Ibom State</h1>
+        <p>The Land of Promise</p>
+      </div>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="content-grid">
+
+      <!-- ABOUT -->
+      <section class="about card">
+        <h2>About</h2>
+        <p>
+          Akwa Ibom State is located in the coastal south-eastern part of Nigeria.
+          Created on September 23, 1987, it is one of the most prosperous states
+          in Nigeria, known for its vast oil reserves, vibrant culture, and
+          stunning Atlantic coastline. The state capital is Uyo, a modern and
+          rapidly developing city.
+        </p>
+        <p>
+          The people of Akwa Ibom, the Ibibio, Annang, and Oron, are known for
+          their warm hospitality, rich traditions, and colourful festivals. The
+          state is also home to the Ibom Tropicana Entertainment Centre, Ibom
+          Air, and a thriving agricultural sector.
+        </p>
+      </section>
+
+      <!-- WEATHER -->
+      <section class="weather card">
+        <h2 class="weather-heading">Weather</h2>
+        <div class="weather-icon-mobile">
+          <img src="images/partlycloudy.jpg" alt="Partly cloudy weather icon">
+        </div>
+        <div class="weather-details">
+          <p><span class="label">Condition:</span> Partly Cloudy</p>
+          <p><span class="label">Temperature:</span> 30°C</p>
+          <p><span class="label">Wind Speed:</span> 12 km/h</p>
+          <p><span class="label">Humidity:</span> 78%</p>
+          <p>
+            <span class="label">Wind Chill:</span>
+            <span id="windchill"></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- FACTS -->
+      <section class="facts card">
+        <h2>Quick Facts</h2>
+        <table>
+          <tr>
+            <th>Capital</th>
+            <td>Uyo</td>
+          </tr>
+          <tr>
+            <th>Country</th>
+            <td>Nigeria</td>
+          </tr>
+          <tr>
+            <th>Area</th>
+            <td>7,081 km²</td>
+          </tr>
+          <tr>
+            <th>Population</th>
+            <td>~5.5 million</td>
+          </tr>
+          <tr>
+            <th>Language</th>
+            <td>English, Ibibio</td>
+          </tr>
+          <tr>
+            <th>Known For</th>
+            <td>Oil, Culture, Coastline</td>
+          </tr>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> &#x1F338; Ediomo V. Ebong &#x1F338; Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
