@@ -1,0 +1,174 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4a0072;
+  color: white;
+  width: 100%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.2rem;
+}
+
+.site-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.02em;
+}
+
+#hamburger {
+  display: block;
+  background: none;
+  border: 2px solid rgba(255,255,255,0.6);
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+#hamburger:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #38005a;
+  width: 100%;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: #e8d5f5;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+main {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 0.75rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #1b1b1b;
+  margin: 0 0 1.2rem 0;
+  text-transform: capitalize;
+}
+
+/* Gallery grid — 1 column mobile */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Temple card */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 0.75rem 1rem;
+  flex: 1;
+}
+
+.card-body h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4a0072;
+  margin: 0 0 0.4rem;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0.2rem 0;
+}
+
+.card-body p span {
+  font-weight: 600;
+  color: #222;
+}
+
+/* No results message */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  padding: 2rem 0;
+}
+
+footer {
+  background-color: #4a0072;
+  color: #fff;
+  text-align: center;
+  padding: 0.9rem 1.5rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+#lastModified {
+  color: #ddb8f5;
+  font-size: 0.82rem;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

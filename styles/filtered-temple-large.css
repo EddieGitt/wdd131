@@ -1,0 +1,85 @@
+@media (min-width: 640px) {
+
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 0 1.5rem;
+    gap: 0;
+  }
+
+  .header-top {
+    padding: 0.7rem 0;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #hamburger {
+    display: none !important;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    width: auto;
+    grid-column: 2;
+    grid-row: 1;
+    gap: 0.1rem;
+  }
+
+  nav a {
+    border-top: none;
+    padding: 0.55rem 0.9rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #fff;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: #fff;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card img {
+    height: 195px;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    padding: 0 1.5rem;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .gallery {
+    gap: 1.5rem;
+  }
+}
