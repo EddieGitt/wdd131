@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Product Review Form – Ediomo V. Ebong</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Ediomo V. Ebong. Product review submission form.">
+  <meta name="author" content="Ediomo V. Ebong">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <span class="site-title">Product Review</span>
+  </header>
+
+  <main>
+    <div class="form-wrapper">
+      <h1>Write a Product Review</h1>
+      <p class="form-intro">Share your experience to help others make better decisions.</p>
+
+      <form method="get" action="review.html">
+
+        <!-- PRODUCT NAME -->
+        <div class="form-group">
+          <label for="product-name">Product Name</label>
+          <select id="product-name" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+
+        <!-- OVERALL RATING -->
+        <fieldset class="form-group rating-group">
+          <legend>Overall Rating</legend>
+          <div class="star-rating">
+
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5" title="5 stars">&#9733;</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4" title="4 stars">&#9733;</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3" title="3 stars">&#9733;</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2" title="2 stars">&#9733;</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" title="1 star">&#9733;</label>
+
+          </div>
+          <p class="rating-hint">1 = Poor &nbsp;|&nbsp; 5 = Excellent</p>
+        </fieldset>
+
+        <!-- DATE OF INSTALLATION -->
+        <div class="form-group">
+          <label for="install-date">Date of Installation</label>
+          <input
+            type="date"
+            id="install-date"
+            name="installDate"
+            required>
+        </div>
+
+        <!-- USEFUL FEATURES -->
+        <fieldset class="form-group checkbox-group">
+          <legend>Useful Features <span class="optional">(select all that apply)</span></legend>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-easy" name="features" value="Easy to Use">
+            <label for="feature-easy">Easy to Use</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-reliable" name="features" value="Reliable Performance">
+            <label for="feature-reliable">Reliable Performance</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-durable" name="features" value="Durable Build">
+            <label for="feature-durable">Durable Build</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-value" name="features" value="Good Value for Money">
+            <label for="feature-value">Good Value for Money</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-support" name="features" value="Great Customer Support">
+            <label for="feature-support">Great Customer Support</label>
+          </div>
+
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-design" name="features" value="Attractive Design">
+            <label for="feature-design">Attractive Design</label>
+          </div>
+
+        </fieldset>
+
+        <!-- WRITTEN REVIEW -->
+        <div class="form-group">
+          <label for="written-review">
+            Written Review
+            <span class="optional">(optional)</span>
+          </label>
+          <textarea
+            id="written-review"
+            name="writtenReview"
+            rows="5"
+            placeholder="Share your detailed experience with this product..."></textarea>
+        </div>
+
+        <!-- USER NAME -->
+        <div class="form-group">
+          <label for="user-name">
+            Your Name
+            <span class="optional">(optional)</span>
+          </label>
+          <input
+            type="text"
+            id="user-name"
+            name="userName"
+            placeholder="e.g. Ediomo E.">
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="form-group submit-group">
+          <input type="submit" value="Submit Review">
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> &#x1F338; Ediomo V. Ebong &#x1F338; Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
