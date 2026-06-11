@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WealthFirst Africa – Build Your Financial Future</title>
+  <meta name="description" content="WealthFirst Africa guides young Nigerians and Africans through the proven first steps to building lasting wealth – from mindset to money management to entrepreneurship.">
+  <meta name="author" content="Ediomo V. Ebong">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="WealthFirst Africa Home">
+        <div class="logo-mark">W</div>
+        <span class="logo-text">WealthFirst <span class="logo-accent">Africa</span></span>
+      </a>
+      <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="steps.html">6 Steps</a>
+        <a href="contact.html">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">For Young Africans Starting From Zero</p>
+        <h1>Your Wealth Journey<br><span class="accent-text">Starts Today</span></h1>
+        <p class="hero-sub">70% of the world's billionaires are self-made. The first step they all share is <strong>financial education</strong>. We make it free and accessible for every young African.</p>
+        <div class="hero-btns">
+          <a href="steps.html" class="btn btn-primary">See the 6 First Steps</a>
+          <a href="contact.html" class="btn btn-outline">Get Weekly Tips</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="stat-cards" id="stat-cards"></div>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="principles">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Core Wealth Principles</h2>
+          <p>Consistent disciplines practised by every self-made millionaire — regardless of background.</p>
+        </div>
+        <div class="principles-grid" id="principles-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-wrap alt-bg" id="calculator">
+      <div class="section-inner">
+        <div class="calc-layout">
+          <div class="calc-intro">
+            <h2>The 50/30/20 Budget Calculator</h2>
+            <p>The most widely used personal budgeting framework. Enter your monthly income and instantly see how to allocate it for financial health.</p>
+            <ul class="legend-list">
+              <li><span class="dot dot-needs"></span><strong>50% Needs</strong> — Rent, food, transport, utilities</li>
+              <li><span class="dot dot-wants"></span><strong>30% Wants</strong> — Entertainment, dining out, lifestyle</li>
+              <li><span class="dot dot-savings"></span><strong>20% Savings</strong> — Emergency fund, investments, goals</li>
+            </ul>
+          </div>
+          <div class="calc-tool">
+            <label for="income-input">Your Monthly Income (&#8358;)</label>
+            <div class="calc-row">
+              <input type="number" id="income-input" placeholder="e.g. 150000" min="0" aria-describedby="calc-output">
+              <button id="calc-btn" class="btn btn-primary">Calculate</button>
+            </div>
+            <div id="calc-output" aria-live="polite" class="calc-output"></div>
+            <p class="calc-tip" id="calc-tip"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="quotes">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>From Those Who Built It</h2>
+          <p>Words from Africa's most successful self-made wealth builders.</p>
+        </div>
+        <div class="quotes-grid" id="quotes-grid"></div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-inner">
+        <h2>Ready to Take Your First Step?</h2>
+        <p>Discover the 6 proven moves that separate those who build wealth from those who only wish for it.</p>
+        <a href="steps.html" class="btn btn-primary btn-lg">Explore the 6 Steps &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-mark logo-sm">W</div>
+          <span>WealthFirst Africa</span>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="steps.html">6 Steps</a>
+          <a href="contact.html">Newsletter</a>
+          <a href="references.html">References</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;<span id="currentyear"></span> Ediomo V. Ebong &nbsp;|&nbsp; Nigeria</p>
+        <p id="lastModified" class="last-mod"></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

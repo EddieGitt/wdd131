@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Signup – WealthFirst Africa</title>
+  <meta name="description" content="Join the WealthFirst Africa newsletter. Get one practical wealth-building tip every week, tailored for young Nigerians and Africans.">
+  <meta name="author" content="Ediomo V. Ebong">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="WealthFirst Africa Home">
+        <div class="logo-mark">W</div>
+        <span class="logo-text">WealthFirst <span class="logo-accent">Africa</span></span>
+      </a>
+      <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="steps.html">6 Steps</a>
+        <a href="contact.html" class="active">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow">Stay Consistent</p>
+        <h1>Join the WealthFirst Newsletter</h1>
+        <p class="page-hero-sub">One practical wealth-building tip every week. No fluff. No spam. Just actionable steps you can take right now.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="form-section">
+      <div class="section-inner form-page-layout">
+
+        <div class="form-side">
+          <div class="form-card">
+            <h2>Sign Up Free</h2>
+            <p class="form-sub">Join thousands of young Africans building financial discipline one week at a time.</p>
+
+            <form id="newsletter-form" method="get" action="thankyou.html" novalidate>
+
+              <div class="field-group">
+                <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="full-name" name="fullName" placeholder="e.g. Ediomo Ebong" required autocomplete="name">
+              </div>
+
+              <div class="field-group">
+                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="e.g. ediomo@email.com" required autocomplete="email">
+              </div>
+
+              <div class="field-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="" disabled selected>Select your country...</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Other">Other African Country</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="age-range">Age Range <span class="required" aria-hidden="true">*</span></label>
+                <select id="age-range" name="ageRange" required>
+                  <option value="" disabled selected>Select your age range...</option>
+                  <option value="18-24">18 – 24</option>
+                  <option value="25-29">25 – 29</option>
+                  <option value="30-35">30 – 35</option>
+                  <option value="36+">36 and above</option>
+                </select>
+              </div>
+
+              <fieldset class="field-group">
+                <legend>Wealth Goals <span class="hint">(select all that apply)</span></legend>
+                <div class="checkbox-wrap">
+                  <div class="check-item">
+                    <input type="checkbox" id="goal-budget" name="goals" value="budgeting">
+                    <label for="goal-budget">Better budgeting habits</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="goal-invest" name="goals" value="investing">
+                    <label for="goal-invest">Start investing</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="goal-business" name="goals" value="business">
+                    <label for="goal-business">Start a business</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="goal-savings" name="goals" value="savings">
+                    <label for="goal-savings">Build an emergency fund</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="goal-debt" name="goals" value="debt">
+                    <label for="goal-debt">Get out of debt</label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="field-group">
+                <label for="message">What is your biggest financial challenge? <span class="hint">(optional)</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="Share your situation so we can tailor our content to your needs..."></textarea>
+              </div>
+
+              <div class="field-group">
+                <label for="frequency">Preferred Email Frequency <span class="required" aria-hidden="true">*</span></label>
+                <div class="radio-wrap" role="radiogroup" aria-labelledby="freq-label">
+                  <div class="radio-item">
+                    <input type="radio" id="freq-weekly" name="frequency" value="weekly" required>
+                    <label for="freq-weekly">Weekly</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" id="freq-biweekly" name="frequency" value="biweekly">
+                    <label for="freq-biweekly">Every two weeks</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" id="freq-monthly" name="frequency" value="monthly">
+                    <label for="freq-monthly">Monthly</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field-group" id="form-error" aria-live="polite"></div>
+
+              <div class="field-group submit-group">
+                <input type="submit" value="Join the Newsletter" id="submit-btn">
+              </div>
+
+            </form>
+
+            <p class="signup-count">
+              <span id="signup-count-display"></span>
+            </p>
+          </div>
+        </div>
+
+        <aside class="form-aside">
+          <h3>What You'll Get</h3>
+          <ul class="benefit-list" id="benefits-list"></ul>
+          <div class="testimonial-card">
+            <p>"This site changed how I think about money. After just 3 weeks of the newsletter I opened my first savings account."</p>
+            <cite>— Chidi O., Lagos</cite>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-mark logo-sm">W</div>
+          <span>WealthFirst Africa</span>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="steps.html">6 Steps</a>
+          <a href="contact.html">Newsletter</a>
+          <a href="references.html">References</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;<span id="currentyear"></span> Ediomo V. Ebong &nbsp;|&nbsp; Nigeria</p>
+        <p id="lastModified" class="last-mod"></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
